@@ -35,7 +35,7 @@
 				<br><br>
 				<p> 
 					<!-- LinkedIn
-					<a href="https://www.linkedin.com/in/yue-ma-a991b425a/"><img src="./pic/LinkedIn.png" height="30px" style="margin-bottom:-3px"></a>
+					<a href="https://www.linkedin.com/in/hechanghong/"><img src="./pic/LinkedIn.png" height="30px" style="margin-bottom:-3px"></a>
 					-->
 					<div style="display:inline-flex;align-items:center;column-gap:8px;">
 					<a href="https://scholar.google.com/citations?user=kMsdHp8AAAAJ&hl=zh-CN"><img src="./pic/icon/google_scholar.png" height="30" style="margin-bottom:-3px"></a>
@@ -43,11 +43,11 @@
 					<a href="mailto:hechanghong@buaa.edu.cn"><img src="./pic/icon/email.png" height="30" style="margin-bottom:-3px"></a>
 					</div>
 					<!-- bilibili
-					<a href="https://space.bilibili.com/358448816?spm_id_from=333.1007.0.0"><img src="./pic/bilibili.jpg" height="30px" style="margin-bottom:-3px"></a>
+					<a href="https://space.bilibili.com/hechanghong"><img src="./pic/bilibili.jpg" height="30px" style="margin-bottom:-3px"></a>
 				    -->
 					<!-- wechat & xiaohongshu
 					<a href="pic/my_wechat.jpg"><img src="./pic/wechat.png" height="30px" style="margin-bottom:-3px"></a>
-					<a href="https://www.xiaohongshu.com/user/profile/6263b02c00000000210242e0"><img src="./pic/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>
+					<a href="https://www.xiaohongshu.com/user/profile/hechanghong"><img src="./pic/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>
 					-->
 				</p>
 			</td>
@@ -130,6 +130,18 @@
 	<tr>&nbsp</tr>
 	<tr>
 		<td width="306">
+		<img src="./pic/education/buaa.png" width="270px" style="box-shadow: 4px 4px 8px #ffffff">
+		</td>				
+		<td>
+		<p><b>Beihang University, China</b></p>
+		<p>Master of Engineering in Mechanical Engineering </p>
+		<p>Advisor: <a href="https://www.me.buaa.edu.cn/info/1072/1939.htm">Dr. Mengxiang Lin</a></p>
+		<p>Sep. 2025 - Jun. 2028</p>
+		</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="306">
 		<img src="./pic/education/siat.png" width="285px" style="box-shadow: 4px 4px 8px #ffffff">
 		</td>				
 		<td>
@@ -142,15 +154,15 @@
 	</tr>
 	<!--########################-->
 	<tr>
-			<td width="306">
-			<img src="./pic/education/ouc.png" width="270px" style="box-shadow: 4px 4px 8px #ffffff">
-			</td>				
-			<td>
-			<p><b>Ocean University of China, China</b></p>
-			<p>Bachelor of Engineering in Mechanical Engineering </p>
-			<p>Sep. 2021 - Jun. 2025</p>
-			</p>
-			</td>
+		<td width="306">
+		<img src="./pic/education/ouc.png" width="270px" style="box-shadow: 4px 4px 8px #ffffff">
+		</td>				
+		<td>
+		<p><b>Ocean University of China, China</b></p>
+		<p>Bachelor of Engineering in Mechanical Engineering </p>
+		<p>Sep. 2021 - Jun. 2025</p>
+		</p>
+		</td>
 	</tr>
 
 	<!--########################-->
@@ -161,46 +173,163 @@
 <!--
 <div style="height: 1440px; overflow: auto;">
 -->
+<style>
+  /* 统一缩略图：285×180，超出部分 cover 裁切 */
+  .pub-thumb{
+    width:285px;
+    height:180px;
+    object-fit:cover;
+    display:block;
+    border-radius:6px;
+    box-shadow:4px 4px 8px #888;
+  }
+  /* 左列固定宽度并顶对齐 */
+  #tbPublications td:first-child{
+    width:306px;
+    vertical-align:top;
+  }
+</style>
+
 <table id="tbPublications" width="100%">
   <tbody>
-    <!-- ====================== Publications 列表模板 ======================
-      用法：复制下方 <tr>…</tr> 作为一个条目，按需填内容。多个条目之间可插入 spacer 行。
 
-      条目模板（复制使用）：
-      <tr>
-        <td width="306">
-          <img src="./indexpics/placeholder.png" width="285" alt="thumbnail"
-               style="box-shadow:4px 4px 8px #888">
-        </td>
-        <td>
-          <p><b>Paper Title</b></p>
-          <p>Author A, Author B, <b>Your Name</b></p>
-          <em>Venue or arXiv:xxxx.xxxxx, Year</em>
-          <p>[<a href="#">paper</a>] [<a href="#">code</a>] [<a href="#">project page</a>]</p>
-        </td>
-      </tr>
-      可选：条目间隔 -->
-      <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+    <!-- ===== Journal Articles ===== -->
+    <tr><td colspan="2"><b>Journal Articles</b></td></tr>
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/buoys.jpg" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>Development of a Mobile Buoy with Controllable Wings: Design, Dynamics Analysis and Experiments</b></p>
+        <em>Journal of Marine Science and Engineering, published 2024</em>
+        <p>[<a href="https://www.mdpi.com/2077-1312/12/1/150" target="_blank" rel="noopener">paper</a>]</p>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <!-- ===== Conference Papers ===== -->
+    <tr><td colspan="2"><b>Conference Papers</b></td></tr>
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/MAGformer.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>MAGFormer: Instance Segmentation in Dense Clutter via Modality Arbitration and Decoupled Realistic Synthesis</b></p>
+        <em>Conference Paper (ICRA2026UR), 2025</em>
+        <p>[<a href="/attaches/MAGFormer.pdf" target="_blank" rel="noopener">paper</a>]</p>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <!-- ===== Patents ===== -->
+    <tr><td colspan="2"><b>Patents</b></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/haicao.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>一种海草苗种植系统</b></p>
+        <em>2025.01</em>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/chaunjixietong.jpg" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>一种船机协同的海草种植设备及种植方法</b></p>
+        <em>2025.01</em>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/haicao1.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>海草移植机器人</b></p>
+        <em>2024.04</em>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/haixing.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>海星注射机器人</b></p>
+        <em>2024.03</em>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/qiaodun.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>桥墩检测机器人</b></p>
+        <em>2023.11</em>
+      </td>
+    </tr>
+    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+    <tr>
+      <td>
+        <img class="pub-thumb" src="./pic/pub/zhidong.png" alt="thumbnail">
+      </td>
+      <td>
+        <p><b>直动有缆式森林病虫害治理机器人</b></p>
+        <em>2023.08</em>
+      </td>
+    </tr>
+
+    <!-- ===== Software Copyright ===== -->
+    <tr><td colspan="2"><b>Software Copyright</b></td></tr>
+	<tr>
+	<td colspan="2" style="vertical-align:top;">
+		<p><b>基于 YOLO 算法的自定位系统</b></p>
+		<em>2024</em>
+	</td>
+	</tr>
+	<tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
+
+
   </tbody>
 </table>
-
 
 <h2>Honors &amp; Awards</h2>
 <table style="border-spacing:2px">
   <tbody>
-    <!--
-    <tr><td> [06/2024] Outstanding graduates student of Beijing.</td></tr>
-    <tr><td> [08/2023] First-Class Scholarship of <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>.</td></tr>
-    <tr><td> [12/2022] First-Class Scholarship of <a href="https://www.tsinghua.edu.cn/">SIGS</a>, Tsinghua University.</td></tr>
-    <tr><td> [03/2022] <a href="https://www.withzz.com/project/detail/99">Tencent Rhino-Bird Research Elite Program</a>, only 72 students in the world admitted to this program.</td></tr>
-    <tr><td> [09/2020] Scholarship for Academic Excellence of <a href="http://ccst.tyut.edu.cn/">Taiyuan University of Technology</a>.</td></tr>
-    <tr><td> [06/2019] Excellent Scientific Student of <a href="http://ccst.tyut.edu.cn/">Taiyuan University of Technology</a>.</td></tr>
-    <tr><td> [09/2019] Scholarship for Academic Excellence of <a href="http://ccst.tyut.edu.cn/">Taiyuan University of Technology</a>.</td></tr>
-    <tr><td> [09/2018] Excellent Academic Progress Student of <a href="http://ccst.tyut.edu.cn/">Taiyuan University of Technology</a>.</td></tr>
-    <tr><td> [06/2018] Scholarship for Academic Excellence of <a href="http://ccst.tyut.edu.cn/">Taiyuan University of Technology</a>.</td></tr>
-    -->
+    <!-- 学业与综合荣誉 -->
+    <tr><td>[2025] 优秀毕业生（中国海洋大学）。</td></tr>
+    <tr><td>[2023, 2024] 国家奖学金（教育部）。</td></tr>
+    <tr><td>[2023, 2024] 一等奖学金（中国海洋大学）。</td></tr>
+    <tr><td>[2022] 二等奖学金（中国海洋大学）。</td></tr>
+    <tr><td>[2022–2024] 优秀学生（中国海洋大学）。</td></tr>
+    <tr><td>[2023] 助学公益之星（中国海洋大学）。</td></tr>
+
+    <!-- 竞赛奖项（本科阶段） -->
+    <tr><td>[2024] 全国海洋航行器设计与制作大赛 国家一等奖。</td></tr>
+    <tr><td>[2024] 全国三维数字化创新设计大赛 国家二等奖。</td></tr>
+    <tr><td>[2024, 2023] 全国大学生节能减排竞赛 国家三等奖（两次）。</td></tr>
+    <tr><td>[2024] 全国大学生生命科学竞赛 国家二等奖。</td></tr>
+    <tr><td>[2023] “深圳杯”数学建模挑战赛 国家二等奖（中国工业与应用数学学会）。</td></tr>
+    <tr><td>[2023] 全国大学生机器人科技创新大赛 国家一等奖。</td></tr>
+    <tr><td>[2023] 全国大学生英语词汇挑战赛 国家一等奖。</td></tr>
+    <tr><td>[2022–2024] 国际先进机器人及仿真技术大赛 国家一等/二等/三等奖。</td></tr>
+    <tr><td>[2024] 大学生创新大赛（原“互联网+”） 山东省金奖。</td></tr>
+
+    <!-- 竞赛奖项（研究生阶段） -->
+    <tr><td>[2025] ICRA Sim2Real Challenge 排名第 4（Rank 4）。</td></tr>
   </tbody>
 </table>
+
 
 <h2>Professional Services</h2>
 <ul>
@@ -223,7 +352,76 @@
 	</tbody>
 </table>
 
+<!-- ===== Travel Photo Wall (eager load) ===== -->
+<h2 style="margin-top:2.5rem;">Travel Gallery</h2>
+<style>
+  html { overflow-y: scroll; }
 
+  .photo-wall{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    margin:12px 0 6px;
+    contain: layout paint;
+  }
+  @media (max-width:960px){ .photo-wall{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:560px){ .photo-wall{grid-template-columns:1fr;} }
+
+  .photo-card{
+    position:relative;
+    border-radius:16px;
+    overflow:hidden;
+    background:#f8f8f8;
+    box-shadow:0 1px 2px rgba(0,0,0,.06),0 6px 18px rgba(0,0,0,.06);
+    transition:transform .18s ease, box-shadow .18s ease;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+    min-height:120px; /* 占位，避免未加载时坍塌 */
+  }
+  .photo-card:hover{
+    transform: scale(1.01);
+    box-shadow:0 4px 12px rgba(0,0,0,.08),0 14px 34px rgba(0,0,0,.10);
+  }
+  .photo-card img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  .photo-cap{
+    position:absolute; left:10px; bottom:10px;
+    padding:4px 8px; border-radius:10px;
+    background:rgba(255,255,255,.72); backdrop-filter:blur(6px);
+    font-size:12px; color:#111;
+  }
+</style>
+
+<div class="photo-wall">
+  <a class="photo-card" href="./pic/life/place1.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place1.jpg" alt="Qingdao"><span class="photo-cap">青岛</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place2.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place2.jpg" alt="Nanjing"><span class="photo-cap">南京</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place3.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place3.jpg" alt="Suzhou"><span class="photo-cap">苏州</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place4.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place4.jpg" alt="Hangzhou"><span class="photo-cap">杭州</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place5.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place5.jpg" alt="Shenzhen"><span class="photo-cap">深圳</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place6.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place6.jpg" alt="Taishan"><span class="photo-cap">泰山</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place7.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place7.jpg" alt="Hong Kong"><span class="photo-cap">香港</span>
+  </a>
+  <a class="photo-card" href="./pic/life/place8.jpg" target="_blank" rel="noopener">
+    <img src="./pic/life/place8.jpg" alt="Guangzhou"><span class="photo-cap">广州</span>
+  </a>
+</div>
+<!-- ===== /Travel Photo Wall ===== -->
 
 
 <div id="footer">
