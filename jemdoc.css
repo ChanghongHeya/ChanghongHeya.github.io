@@ -372,3 +372,25 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+table.industrial-table {
+    margin-top: 1.2em;
+}
+
+table.industrial-table td {
+    vertical-align: middle;
+    padding: 16px 12px 8px;
+}
+
+table.industrial-table td:first-child {
+    padding-right: 32px;
+}
+
+table.industrial-table td:nth-child(2) {
+    padding-left: 0;
+}
+
+table.industrial-table img {
+    display: block;
+    margin: 0;
+}
