@@ -11,8 +11,123 @@
 <link rel="stylesheet" href="jemdoc.css" type="text/css">
 <title>Changhong He@BUAA</title>
 <style>
-    .smaller-image {
-      width: 30%;
+    .top-photo {
+      width: 160px;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-top: 4px;
+    }
+    .hero-photo {
+      flex: 0 0 auto;
+    }
+    .hero-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .hero-content #toptitle {
+      margin-bottom: 0.2em;
+      padding-bottom: 0;
+    }
+    .hero-content #toptitle h1 {
+      margin: 0 0 0.8em 0;
+      line-height: 1.6;
+    }
+    .hero-subline {
+      margin: 0 0 0.35em;
+    }
+    .hero-role {
+      margin: 0;
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+    .hero-links {
+      margin-top: 6px;
+    }
+    .hero-icons {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-icons img {
+      height: 26px;
+      width: auto;
+      display: block;
+    }
+    .icon-emoji {
+      font-size: 29px;
+      line-height: 1;
+      display: inline-block;
+      transform: translateY(1px);
+    }
+    .hero-bio {
+      margin: 0.4em 0 0;
+      line-height: 1.6;
+      text-indent: 2em;
+    }
+    @media (max-width: 700px) {
+      .hero {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .top-photo {
+        width: 150px;
+      }
+    }
+    .brand-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 116px;
+      padding: 6px;
+      box-sizing: border-box;
+      border-radius: 14px;
+      background: #f6f6f6;
+      border: 1px solid #e2e2e2;
+      position: relative;
+      overflow: hidden;
+    }
+    .brand-logo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .brand-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.65);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.25;
+      text-align: center;
+      padding: 6px 8px;
+      gap: 2px;
+      opacity: 0;
+      transition: opacity 0.18s ease;
+      pointer-events: none;
+    }
+    .brand-overlay a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    .brand-overlay-title {
+      font-weight: bold;
+    }
+    .brand-chip:hover .brand-overlay {
+      opacity: 1;
+      pointer-events: auto;
     }
 </style>
 
@@ -22,45 +137,39 @@
 <div id="layout-content" style="margin-top:25px">
  <a href="https://github.com/ChanghongHeya" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#7C3AED; color:#ffffff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
-<table>
-	<tbody>
-		<tr>
-			<td width="670">
-				<div id="toptitle">					
-					<h1>Changhong He(何昌洪) </h1>
-					<h1></h1>
-					<img src="./pic/cover/sign.png" alt="你的图片"  class="smaller-image">
-					</div>
-				<h3 style="display:inline;margin:0;">🎓 Master’s student at Beihang University</h3>
-				<br><br>
-				<p> 
-					<!-- LinkedIn
-					<a href="https://www.linkedin.com/in/hechanghong/"><img src="./pic/LinkedIn.png" height="30px" style="margin-bottom:-3px"></a>
-					-->
-					<div style="display:inline-flex;align-items:center;column-gap:8px;">
-					<a href="https://scholar.google.com/citations?user=kMsdHp8AAAAJ&hl=zh-CN"><img src="./pic/icon/google_scholar.png" height="30" style="margin-bottom:-3px"></a>
-					<a href="https://github.com/ChanghongHeya"><img src="./pic/icon/github_s.jpg" height="30" style="margin-bottom:-3px"></a>
-					<a href="mailto:hechanghong@buaa.edu.cn"><img src="./pic/icon/email.png" height="30" style="margin-bottom:-3px"></a>
-					</div>
-					<!-- bilibili
-					<a href="https://space.bilibili.com/hechanghong"><img src="./pic/bilibili.jpg" height="30px" style="margin-bottom:-3px"></a>
-				    -->
-					<!-- wechat & xiaohongshu
-					<a href="pic/my_wechat.jpg"><img src="./pic/wechat.png" height="30px" style="margin-bottom:-3px"></a>
-					<a href="https://www.xiaohongshu.com/user/profile/hechanghong"><img src="./pic/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>
-					-->
-				</p>
-			</td>
-			<td>
-				<img src="./pic/life/life1.png" border="0" width="240"><br>
-			</td>
-	</tr></tbody>
-</table>
-
-<h2>Biography</h2>
-<p>
-	Hello, I am a first-year master’s student at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>. I received my Bachelor of Engineering from <a href="https://www.ouc.edu.cn/" target="_blank" rel="noopener noreferrer">Ocean University of China</a> in 2025, ranking first in my major.
-</p>
+<div class="hero">
+	<div class="hero-photo">
+		<img src="./pic/life/life1.png" alt="Portrait" class="top-photo">
+	</div>
+	<div class="hero-content">
+		<div id="toptitle">					
+			<h1>Changhong He(何昌洪) </h1>
+		</div>
+		<div class="hero-subline">
+			<h3 class="hero-role">🎓 Master’s student at Beihang University</h3>
+		</div>
+		<p class="hero-bio">
+			Hello, I am a first-year master’s student at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>. I received my Bachelor of Engineering from <a href="https://www.ouc.edu.cn/" target="_blank" rel="noopener noreferrer">Ocean University of China</a> in 2025, ranking first in my major.
+		</p>
+		<div class="hero-links">
+			<div class="hero-icons">
+				<!-- LinkedIn
+				<a href="https://www.linkedin.com/in/hechanghong/"><img src="./pic/LinkedIn.png" height="30px" style="margin-bottom:-3px"></a>
+				-->
+				<a href="https://scholar.google.com/citations?user=kMsdHp8AAAAJ&hl=zh-CN"><img src="./pic/icon/google_scholar.png" alt="Google Scholar"></a>
+				<a href="https://github.com/ChanghongHeya"><img src="./pic/icon/github_s.jpg" alt="GitHub"></a>
+				<a href="mailto:hechanghong@buaa.edu.cn"><span class="icon-emoji" aria-label="Email">✉️</span></a>
+				<!-- bilibili
+				<a href="https://space.bilibili.com/hechanghong"><img src="./pic/bilibili.jpg" height="30px" style="margin-bottom:-3px"></a>
+			    -->
+				<!-- wechat & xiaohongshu
+				<a href="pic/my_wechat.jpg"><img src="./pic/wechat.png" height="30px" style="margin-bottom:-3px"></a>
+				<a href="https://www.xiaohongshu.com/user/profile/hechanghong"><img src="./pic/xiaohongshu.png" height="30px" style="margin-bottom:-3px"></a>
+				-->
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <h2>News</h2>
@@ -106,15 +215,16 @@
 <table id="tbPublications" class="industrial-table" width="100%">
   <tbody>
 	<tr>
-		<td width="306" style="padding:16px 0 8px 0;">
-		<img src="./pic/industrial/baidu.png" width="270px" style="box-shadow: 4px 4px 8px #ffffff; margin-right:16px;">
-		</td>				
 		<td style="padding:16px 0 8px 0;">
-		<p><b>Baidu AI Cloud</b></p>
-		<p>Intelligent Transportation Algorithms Intern </p>
-		<p>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao"> Mei Yu </a></p>
-		<p>Mon. YYYY – Mon. YYYY, Beijing, China</p>
-		</p>
+		<span class="brand-chip">
+			<img src="./pic/industrial/baidu.png" alt="Baidu logo" class="brand-logo">
+			<span class="brand-overlay">
+				<span class="brand-overlay-title">Baidu AI Cloud</span>
+				<span>Intelligent Transportation Algorithms Intern</span>
+				<span>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao">Mei Yu</a></span>
+				<span>Nov. 2025 - May. 2026, Beijing, China</span>
+			</span>
+		</span>
 		</td>
 	</tr>
   </tbody>
@@ -172,59 +282,55 @@
 
 
 <h2> Selected Publications | <a href="https://scholar.google.com/citations?user=kwBR1ygAAAAJ&hl=zh-CN">Full List</a></h2>
-<!--
-<div style="height: 1440px; overflow: auto;">
--->
 <style>
-  /* 统一缩略图：285×180，超出部分 cover 裁切 */
-  .pub-thumb{
-    width:285px;
-    height:180px;
-    object-fit:cover;
-    display:block;
-    border-radius:6px;
-    box-shadow:4px 4px 8px #888;
+  .pub-section {
+    margin-top: 0.25rem;
   }
-  /* 左列固定宽度并顶对齐 */
-  #tbPublications td:first-child{
-    width:306px;
-    vertical-align:top;
+  .pub-group-title {
+    font-weight: bold;
+    margin-top: 0.8rem;
+  }
+  .pub-list {
+    margin: 0.35rem 0 0.6rem 1.25rem;
+    padding: 0;
+  }
+  .pub-item {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+  }
+  .pub-title {
+    font-weight: bold;
+  }
+  .pub-meta {
+    color: #444;
+  }
+  .pub-links {
+    margin-top: 0.1rem;
   }
 </style>
-
-<table id="tbPublications" width="100%">
-  <tbody>
-
-    <!-- ===== Journal Articles ===== -->
-    <tr><td colspan="2"><b>Journal Articles</b></td></tr>
-    <tr>
-      <td>
-        <img class="pub-thumb" src="./pic/pub/buoys.jpg" alt="thumbnail">
-      </td>
-      <td>
-        <p><b>Development of a Mobile Buoy with Controllable Wings: Design, Dynamics Analysis and Experiments</b></p>
-        <em>Journal of Marine Science and Engineering, published 2024</em>
-        <p>[<a href="https://www.mdpi.com/2077-1312/12/1/150" target="_blank" rel="noopener">paper</a>]</p>
-      </td>
-    </tr>
-    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
-
-    <!-- ===== Conference Papers ===== -->
-    <tr><td colspan="2"><b>Conference Papers</b></td></tr>
-    <tr>
-      <td>
-        <img class="pub-thumb" src="./pic/pub/MAGformer.png" alt="thumbnail">
-      </td>
-      <td>
-        <p><b>abc</b></p>
-        <em>Conference Paper (ICRA2026UR), 2025</em>
-        <p>[<a href="/attaches/MAGFormer.pdf" target="_blank" rel="noopener">paper</a>]</p>
-      </td>
-    </tr>
-    <tr class="spacer"><td colspan="2" style="height:10px;"></td></tr>
-
-  </tbody>
-</table>
+<div class="pub-section">
+  <div class="pub-group">
+    <div class="pub-group-title">Journal Articles</div>
+    <ol class="pub-list">
+      <li class="pub-item">
+        <div class="pub-title">Development of a Mobile Buoy with Controllable Wings: Design, Dynamics Analysis and Experiments</div>
+        <div class="pub-meta"><em>Journal of Marine Science and Engineering, published 2024</em></div>
+        <div class="pub-links">[<a href="https://www.mdpi.com/2077-1312/12/1/150" target="_blank" rel="noopener">paper</a>]</div>
+      </li>
+    </ol>
+  </div>
+  <div class="pub-group">
+    <div class="pub-group-title">Conference Papers</div>
+    <ol class="pub-list">
+      <li class="pub-item">
+        <div class="pub-title">MAGFormer: Instance Segmentation in Dense Clutter via Modality
+			Arbitration and Decoupled Realistic Synthesis</div>
+        <div class="pub-meta"><em>in submission , 2025</em></div>
+        <div class="pub-links">[<a href="/attaches/MAGFormer.pdf" target="_blank" rel="noopener">paper</a>]</div>
+      </li>
+    </ol>
+  </div>
+</div>
 
 <h2>Patents</h2>
 <table style="border-spacing:2px">
