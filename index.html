@@ -70,6 +70,31 @@
       line-height: 1.6;
       text-indent: 2em;
     }
+    .hero-interests {
+      margin-top: 0.7em;
+    }
+    .hero-interests-title {
+      margin: 0 0 0.4em;
+      font-weight: bold;
+      color: #24292f;
+    }
+    .hero-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .hero-topic {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.28em 0.8em;
+      border-radius: 999px;
+      background: #ddf4ff;
+      border: 1px solid #54aeff66;
+      color: #0969da;
+      font-size: 0.92em;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
     @media (max-width: 700px) {
       .hero {
         flex-direction: column;
@@ -129,6 +154,16 @@
       opacity: 1;
       pointer-events: auto;
     }
+    .ra-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-start;
+      margin: 16px 0 8px;
+    }
+    .ra-grid .brand-chip {
+      flex: 0 0 auto;
+    }
 </style>
 
 
@@ -151,6 +186,15 @@
 		<p class="hero-bio">
 			Hello, I am a first-year master’s student at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>. I received my Bachelor of Engineering from <a href="https://www.ouc.edu.cn/" target="_blank" rel="noopener noreferrer">Ocean University of China</a> in 2025, ranking first in my major.
 		</p>
+		<div class="hero-interests">
+			<p class="hero-interests-title">Research Interests</p>
+			<div class="hero-topics">
+				<span class="hero-topic">Domain-Specific Model Post-Training</span>
+				<span class="hero-topic">Reinforcement Learning</span>
+				<span class="hero-topic">Robotic Manipulation</span>
+				<span class="hero-topic">World Models</span>
+			</div>
+		</div>
 		<div class="hero-links">
 			<div class="hero-icons">
 				<!-- LinkedIn
@@ -211,24 +255,27 @@
 </ul>
 </div>
 
-<h2>Industrial Experience</h2>
-<table id="tbPublications" class="industrial-table" width="100%">
-  <tbody>
-	<tr>
-		<td style="padding:16px 0 8px 0;">
-		<span class="brand-chip">
-			<img src="./pic/industrial/baidu.png" alt="Baidu logo" class="brand-logo">
-			<span class="brand-overlay">
-				<span class="brand-overlay-title">Baidu AI Cloud</span>
-				<span>Intelligent Transportation Algorithms Intern</span>
-				<span>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao">Mei Yu</a></span>
-				<span>Nov. 2025 - May. 2026, Beijing, China</span>
-			</span>
+<h2>Research Intern Experience</h2>
+<div class="ra-grid">
+	<span class="brand-chip">
+		<img src="./pic/industrial/baidu.png" alt="Baidu logo" class="brand-logo">
+		<span class="brand-overlay">
+			<span class="brand-overlay-title">Baidu AI Cloud</span>
+			<span>Intelligent Transportation Algorithms Intern</span>
+			<span>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao">Mei Yu</a></span>
+			<span>Nov. 2025 - May. 2026, Beijing, China</span>
 		</span>
-		</td>
-	</tr>
-  </tbody>
-</table>
+	</span>
+	<span class="brand-chip">
+		<img src="./pic/education/siat.png" alt="UCAS logo" class="brand-logo">
+		<span class="brand-overlay">
+			<span class="brand-overlay-title">University of Chinese Academy of Sciences</span>
+			<span>Research Intern</span>
+			<span>Advisor: <a href="https://github.com/nachifur">Jiawei Liu</a></span>
+			<span>Jun. 2025 - Dec. 2025</span>
+		</span>
+	</span>
+</div>
 
 <h2>Education & Visiting</h2>
 <table id="tbPublications" width="100%">
@@ -245,18 +292,6 @@
 		<p>Master of Engineering in Mechanical Engineering </p>
 		<p>Advisor: <a href="https://www.me.buaa.edu.cn/info/1072/1939.htm">Dr. Mengxiang Lin</a></p>
 		<p>Sep. 2025 - Jun. 2028</p>
-		</p>
-		</td>
-	</tr>
-	<tr>
-		<td width="306">
-		<img src="./pic/education/siat.png" width="285px" style="box-shadow: 4px 4px 8px #ffffff">
-		</td>				
-		<td>
-		<p><b> University of Chinese Academy of Sciences, China</b></p>
-		<p>SIA-IDE, CAS  </p>
-		<p>Advisor: <a href="https://github.com/nachifur">Dr. Jiawei Liu</a></p>
-		<p>July 2025 - Present <p>
 		</p>
 		</td>
 	</tr>
@@ -301,6 +336,12 @@
   .pub-title {
     font-weight: bold;
   }
+  .pub-note {
+    font-weight: normal;
+    color: #666;
+    margin-left: 6px;
+    font-size: 0.95em;
+  }
   .pub-meta {
     color: #444;
   }
@@ -326,18 +367,15 @@
     <div class="pub-group-title">Conference Papers</div>
     <ol class="pub-list">
       <li class="pub-item">
-        <div class="pub-title">MAGFormer: Instance Segmentation in Dense Clutter via Modality
-          Arbitration and Decoupled Realistic Synthesis</div>
-        <div class="pub-meta">
-          <em>in submission , 2025</em>
-          <span class="pub-links">[<a href="/attaches/MAGFormer.pdf" target="_blank" rel="noopener">paper</a>]</span>
-        </div>
-      </li>
-	  <li class="pub-item">
-        <div class="pub-title">Unified Few-Shot Anomaly Detection via Multi-Agent Rule Induction</div>
+        <div class="pub-title">A Hierarchical Multi-Fidelity Policy Learning Framework for Conflict-Zone Traffic Control<span class="pub-note">(First Author)</span></div>
         <div class="pub-meta">
           <em>in submission , 2026</em>
-          <span class="pub-links">[<a href="/attaches/MAGFormer.pdf" target="_blank" rel="noopener">paper</a>]</span>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Unified Few-Shot Anomaly Detection via Multi-Agent Rule Induction<span class="pub-note">(Co-First Author)</span></div>
+        <div class="pub-meta">
+          <em>in submission , 2026</em>
         </div>
       </li>
     </ol>
@@ -368,6 +406,9 @@
 	  <td>
 		  <a href="https://github.com/nachifur/MulimgViewer.git" target="_blank">MulimgViewer</a>
 		  <img src="https://img.shields.io/github/stars/nachifur/MulimgViewer?style=social" alt="GitHub stars">
+		  <span style="display:inline-block; width: 20px;"></span>
+		  <a href="https://github.com/ChanghongHeya/Embodied-AI-Simulator-Notes.git" target="_blank">Embodied-AI-Simulator-Notes</a>
+		  <img src="https://img.shields.io/github/stars/ChanghongHeya/Embodied-AI-Simulator-Notes?style=social" alt="GitHub stars">
 	  </td>
 	</tr>
   </tbody>
