@@ -108,7 +108,7 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 320px;
+      width: 100%;
       height: 116px;
       padding: 6px;
       box-sizing: border-box;
@@ -155,14 +155,14 @@
       pointer-events: auto;
     }
     .ra-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       align-items: flex-start;
       margin: 16px 0 8px;
     }
     .ra-grid .brand-chip {
-      flex: 0 0 auto;
+      width: 100%;
     }
     .news-highlight {
       color: #cf222e;
@@ -223,6 +223,9 @@
 <div style="height: 200px; overflow: auto;">
 <ul>
 	<li class="news-highlight">
+  		<strong>[2026-07]</strong>: Selected for the <strong>Zhongguancun Pulse Program</strong> (50/458)!
+	</li>
+	<li>
   		<strong>[2026-05]</strong>: Two papers have been accepted by <strong>IEEE ICMA</strong> and <strong>IEEE RCAR</strong>.
 	</li>
 	<li>
@@ -264,21 +267,30 @@
 <h2>Research Intern Experience</h2>
 <div class="ra-grid">
 	<span class="brand-chip">
-		<img src="./pic/industrial/baidu.png" alt="Baidu logo" class="brand-logo">
-		<span class="brand-overlay">
-			<span class="brand-overlay-title">Baidu AI Cloud</span>
-			<span>Intelligent Transportation Algorithms Intern</span>
-			<span>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao">Mei Yu</a></span>
-			<span>Nov. 2025 - May. 2026, Beijing, China</span>
-		</span>
-	</span>
-	<span class="brand-chip">
 		<img src="./pic/education/siat.png" alt="UCAS logo" class="brand-logo">
 		<span class="brand-overlay">
 			<span class="brand-overlay-title">University of Chinese Academy of Sciences</span>
 			<span>Research Intern</span>
 			<span>Advisor: <a href="https://github.com/nachifur">Jiawei Liu</a></span>
 			<span>Jun. 2025 - Dec. 2025</span>
+		</span>
+	</span>
+	<span class="brand-chip">
+		<img src="./pic/industrial/baidu.png" alt="Baidu logo" class="brand-logo">
+		<span class="brand-overlay">
+			<span class="brand-overlay-title">Baidu AI Cloud</span>
+			<span>Intelligent Transportation Algorithms Intern</span>
+			<span>Mentor: <a href="https://scholar.google.com/citations?user=udNY8T4AAAAJ&hl=zh-CN&oi=ao">Mei Yu</a></span>
+			<span>Nov. 2025 - Jun. 2026, Beijing, China</span>
+		</span>
+	</span>
+	<span class="brand-chip">
+		<img src="./pic/education/zgc.png" alt="Zhongguancun logo" class="brand-logo">
+		<span class="brand-overlay">
+			<span class="brand-overlay-title">Zhongguancun Pulse Program, Beijing</span>
+			<span>Research Intern (Robot Learning)</span>
+			<span>Advisor: <a href="https://bza.edu.cn/teacher/ebgw2ueb05w1cz6oabxwmziiyhqzunmo">Ce Hao</a></span>
+			<span>Jul. 2026 - Oct. 2026, Beijing, China</span>
 		</span>
 	</span>
 </div>
