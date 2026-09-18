@@ -187,7 +187,10 @@
 			<h3 class="hero-role">🎓 Master’s student at Beihang University</h3>
 		</div>
 		<p class="hero-bio">
-			Hello, I am a first-year master’s student at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>. I received my Bachelor of Engineering from <a href="https://www.ouc.edu.cn/" target="_blank" rel="noopener noreferrer">Ocean University of China</a> in 2025, ranking first in my major. I feel incredibly fortunate to have met Wen at Ocean University of China, where we shared nearly three wonderful years together—memories I will cherish for a lifetime.
+			Hello! I am a first-year master’s student in Mechanical Engineering at <a href="https://www.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">Beihang University</a>, under the supervision of <a href="https://www.me.buaa.edu.cn/info/1072/1939.htm" target="_blank" rel="noopener noreferrer">Prof. Mengxiang Lin</a>. I am fortunate to collaborate with <a href="https://iai.buaa.edu.cn/info/1013/1096.htm" target="_blank" rel="noopener noreferrer">Prof. Si Liu</a> at Beihang’s School of Artificial Intelligence. I also conduct research at <a href="https://www.bza.edu.cn/en" target="_blank" rel="noopener noreferrer">Zhongguancun Academy</a> under the guidance of <a href="https://www.bza.edu.cn/teacher/ebgw2ueb05w1cz6oabxwmziiyhqzunmo" target="_blank" rel="noopener noreferrer">Prof. Ce Hao</a>.
+		</p>
+		<p class="hero-bio">
+			I received my Bachelor of Engineering from <a href="https://www.ouc.edu.cn/" target="_blank" rel="noopener noreferrer">Ocean University of China</a> in 2025, graduating first in my major. My experience includes research internships at the Chinese Academy of Sciences and Tsinghua University, as well as an industry internship at Baidu AI Cloud. I am also grateful to Wen for the three years we shared during my undergraduate studies.
 		</p>
 		<div class="hero-interests">
 			<p class="hero-interests-title">Research Interests</p>
@@ -365,9 +368,18 @@
     margin: 0.35rem 0 0.6rem 1.25rem;
     padding: 0;
   }
+  .pub-list-scroll {
+    max-height: 21rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-right: 0.9rem;
+    scrollbar-gutter: stable;
+    scroll-snap-type: y proximity;
+  }
   .pub-item {
     margin: 0.5rem 0;
     line-height: 1.4;
+    scroll-snap-align: start;
   }
   .pub-title {
     font-weight: bold;
@@ -401,17 +413,23 @@
 
   <div class="pub-group">
     <div class="pub-group-title">Conference Papers</div>
-    <ol class="pub-list">
+    <ol class="pub-list pub-list-scroll" aria-label="Conference papers">
+      <li class="pub-item">
+        <div class="pub-title">Collecting in the Robot-Executable Space: A Morphology-Matched Three-Finger Demonstration System</div>
+        <div class="pub-meta">
+          <em>In Submission, 2026</em>
+        </div>
+      </li>
       <li class="pub-item">
         <div class="pub-title">LLM-Based Hierarchical Coordinated Control with Continuation-Aware Policy Learning</div>
         <div class="pub-meta">
-          <em>in submission , 2026</em>
+          <em>In Submission, 2026</em>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-title">Unified Few-Shot Anomaly Detection via Multi-Agent Rule Induction</div>
         <div class="pub-meta">
-          <em>in submission , 2026</em>
+          <em>In Submission, 2026</em>
         </div>
       </li>
 	  <li class="pub-item">
@@ -430,6 +448,12 @@
         <div class="pub-title">A Two-Stage Learning Framework for Autonomous Obstacle Avoidance of an Eel-Like Robot</div>
         <div class="pub-meta">
           <em>IEEE International Conference on Real-time Computing and Robotics, Best Paper Finalist</em>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-title">Open-Vocabulary Robotic Grasping with Single-View Amodal 3D Priors and Table-Aware Registration</div>
+        <div class="pub-meta">
+          <em>In Submission, 2026</em>
         </div>
       </li>
     </ol>
